@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="wynik"></p>
+    <script>
+        var ilelitrow;
+        var benzyna;
+        var diesel;
+        var cena;
+        var paliwo;
+        var wypisz=document.getElementById("wynik");
+        ilelitrow=55;
+        benzyna=5.59;
+        diesel=6;
+        paliwo="diesel";
+        if(paliwo=="benzyna")
+            {
+                cena=ilelitrow*benzyna;
+                wypisz.innerHTML="za benzyne zaplacisz "+cena+"zł";
+            }
+            else if(paliwo=="diesel")
+            {
+                cena=ilelitrow*benzyna;
+                wypisz.innerHTML="za benzyne zaplacisz "+cena+"zł";
+                
+            }
+            else{
+                wypisz.innerHTML="błędne paliwo";
+            }
+    </script>
     
 </body>
 </html>
